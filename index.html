@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City List</title>
+    <title>City Browser</title>
+    <style>
+        #navigation {
+            margin-top: 20px;
+        }
+        #navigation a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: blue;
+        }
+        #navigation a[style*="visibility: hidden"] {
+            color: grey;
+            pointer-events: none;
+        }
+    </style>
+    <script defer src="main.js"></script>
 </head>
 <body>
+    <div id="city-list"></div>
     <div id="navigation">
-        <a href="#" id="backLink">Terug</a>
-        <a href="#" id="forwardLink">Verder</a>
+        <a href="#" id="prev">Vorige</a>
+        <a href="#" id="next">Volgende</a>
     </div>
-    <script src="main.js"></script>
 </body>
 </html>
 
